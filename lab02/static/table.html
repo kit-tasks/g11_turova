@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        TABLE {
+         table-layout: fixed; /* Ячейки фиксированной ширины */
+        }
+       </style>
+    <title>11gr_Turova_table</title>
+</head>
+<body>
+    <a href="/static/index.html">home page</a>
+    <a href="/static/page.html">content page</a>
+    <a href="/static/list.html">list page</a>
+
+      <h3>Tables</h3>
+      <table></table>
+      <hr />
+      <h3>Table 1</h3>
+      <table border="1" >
+        <tr>
+          <th style="background-color:darkcyan; opacity: 80;">r1c1</th>
+          <th style="background-color: bisque; opacity: 80;">r1c2</th>
+          <th style="background-color: darkcyan; opacity: 80;">r1c3</th>
+          <th style="background-color: bisque; opacity: 80;">r1c4</th>
+        </tr>
+        <tr>
+          <th style="background-color: bisque; opacity: 80;">r2c1</th>
+          <td style="background-color: darkcyan; opacity: 80;">r2c2</td>
+          <td style="background-color: bisque; opacity: 80;" >r2c3</td>
+          <td style="background-color: darkcyan; opacity: 80;">r2c4</td>
+        </tr>
+        <tr>
+          <th style="background-color: darkcyan; opacity: 80;">r3c1</th>
+          <td style="background-color: bisque; opacity: 80;">r3c2</td>
+          <td style="background-color: darkcyan; opacity: 80;">r3c3</td>
+          <td style="background-color: bisque; opacity: 80;">r3c4</td>
+        </tr>
+        <tr>
+          <th style="background-color: bisque; opacity: 80;">r4c1</th>
+          <td style="background-color: darkcyan; opacity: 80;">r4c2</td>
+          <td style="background-color: bisque; opacity: 80;">r4c3</td>
+          <td style="background-color: darkcyan; opacity: 80;">r4c4</td>
+        </tr>
+        </table>
+        <hr />
+        <h3>Table 2</h3>
+        <table border="1" ">
+            <tr>
+                <td style="height: 50px; width: 50px;" >LT</td>
+                <td style="height: 50px; width: 50px;">CT</td>
+                <td style="height: 50px; width: 50px;">RT</td>
+            </tr>
+            <tr>
+                <td style="height: 50px; width: 50px;">L</td>
+                <td style="height: 50px; width: 50px;">C</td>
+                <td style="height: 50px; width: 50px;">R</td>
+            </tr>
+            <tr>
+                <td style="height: 50px; width: 50px;">LB</td>
+                <td style="height: 50px; width: 50px;">CB</td>
+                <td style="height: 50px; width: 50px;">RB</td>
+            </tr>
+        </table>
+      
+        <hr />
+        <h3>Table 3</h3>
+        <table border="1" >
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <td rowspan="2">a1</td>
+                <td>a2</td>
+                <td>a3</td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td rowspan="2" colspan="2">b2</td>
+            </tr>
+            <tr>
+                <th colspan="2">C</th>
+            </tr>
+      </table>
+      <hr />
+</body>
+</html>
