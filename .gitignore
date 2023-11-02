@@ -1,6 +1,8 @@
+# all secret files
+.*
 # cache files
 __pycache__
 ~*
 # enviroment
-venv
+.venv
 run_code
