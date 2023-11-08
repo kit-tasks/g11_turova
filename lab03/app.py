@@ -18,6 +18,36 @@ def HelloNameGet():
     doc += '</html>'
     return doc
 
-
+@app.route('/HelloNamePost', methods=['GET', 'POST'])
+def HelloNamePost():
+    if request.method == 'GET':
+        param = request.args.get['param']
+        doc =''
+        doc += '<html lang = "ru">'
+        doc += '<head>'
+        doc += '</head>'
+        doc += '<body>'
+        doc += '<h1> result with GET method </h1>'
+        doc += '<hr>'
+        doc += 'hello, ' + param + '!'
+        doc += '</body>'
+        doc += '</html>'
+       
+        return doc
+    elif request.method == 'POST':
+        param = request.form['param']
+        doc =''
+        doc += '<html lang = "ru">'
+        doc += '<head>'
+        doc += '</head>'
+        doc += '<body>'
+        doc += '<h1> result with POST method </h1>'
+        doc += '<hr>'
+        doc += 'hello, ' + param + '!'
+        doc += '</body>'
+        doc += '</html>'
+        return doc
+    else:
+        return 'unknown method'
 
     
