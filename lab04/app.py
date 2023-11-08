@@ -4,12 +4,18 @@ app = Flask(__name__)
 
 @app.route('/checkboxes', methods = ['GET'])
 def checkboxes():
-    if "opt1" not in request.args:
-        return "option 1 is not selected"
     opt2 = request.args.get("opt2")
-    if opt2 == None:
+    opt1 = request.args.get("opt1")
+
+    if "opt1" and  "opt2" not in request.args:
+        return  " nothing"
+    elif "opt1" not in request.args:
+        return "option 1 is not selected"
+    elif "opt2" not in request.args:
         return "option 2 is not selected"
-    return "booth options selected"
+    elif "opt1" and "opt2" in request.args:
+        return "option 1 and option 2 was selected"
+
 
 @app.route('/radiobuttons')
 def radiobuttons():
