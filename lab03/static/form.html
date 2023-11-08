@@ -7,14 +7,23 @@
 <body>
     <h1>form with GET method</h1>
     <h1>GET</h1>
-    <form method="get" action="../HelloName">
-      <p>
-        <label>param:</label>
-        <input type="text" name="param"  />
-      </p>
-      <input type="submit" value="send data" />
+    <form method="get" action="/HelloNameGet">
+      please, enter your name here: <input type="text" name="param">
+      <input type="submit" value="say hello">
+     
     </form>
     <hr />
+
+    <h1>form with POST method</h1>
+    <hr>
+    <form method="post" action="/HelloNamePost">
+      please, enter your name here: <input type="text" name="param">
+      <input type="submit" value="say hello">
+     
+    </form>
+
+
+
     
 </body>
 </html>__
