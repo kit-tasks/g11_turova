@@ -1,0 +1,43 @@
+create schema lab10;
+set search_path = "lab10"
+create sequence sq_notes_id;
+create table note(
+id integer NOT NULL DEFAULT nextval ('sq_notes_id'),
+txt varchar(50) NOT NULL,
+TS TIMESTAMP NOT NULL);
+alter table notes ADD constraint sq_notes_id primary key (id);
+
+
+в requirements:
+flask
+psycopg2-binary
+
+координаты сервера:
+хост: pg.spb-kit.online
+порт: s4321
+юзер: student 
+password: student_pass
+db = g11_familia
+
+create schema lab10;
+create sq_notes_id;
+create table lab10.notes
+(
+
+)
+
+create schema lab10;
+set search_path = "lab10"
+create sequence sq_notes_id;
+create table note(
+id integer NOT NULL DEFAULT nextval ('sq_notes_id'),
+txt varchar(50) NOT NULL,
+TS TIMESTAMP NOT NULL DEFAULT now);
+alter table notes ADD constraint sq_notes_id primary key (id);
+
+INSERT INTO 
+Заданеи:
+красиво
+Сортировка
+Сделать цветную заметку и серое время создания
+
