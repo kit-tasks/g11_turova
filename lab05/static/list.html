@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11gr_Turova</title>
+</head>
+<body>
+    <h2>simple to do list</h2>
+    <hr>
+    <form method="post" action="list">
+        item text:
+        <input type="text" name="content">
+        <input type="submit" value="add item">
+    </form>
+    <hr>
+    <ol>
+        {% for item in text_items %}
+        <li>
+            {{item}}
+        </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
